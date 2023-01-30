@@ -1,6 +1,6 @@
 # Rebel Scum: A Savegame Manager for Cataclysm: Dark Days Ahead
 
-![](./resources/rebel_scum.png)
+![Zombie rebel cartoon](./resources/rebel_scum.png)
 
 ## About
 
