@@ -11,7 +11,8 @@ def pp(var, name=None):
 
 
 def showlogo():
-    with open("logo.txt", "r", encoding="utf-8") as f:
+    path = os.path.join(os.path.dirname(__file__), "resources", "logo.txt")
+    with open(path, "r", encoding="utf-8") as f:
         logo = f.read()
 
     print(logo)
