@@ -21,3 +21,5 @@ This code is licensed under [Creative Commons Attribution-NonCommercial-ShareAli
 ## Credits
 
 Cristiano Dias, with help from friendly neighborhood ChatGPT.
+
+Art by Midjourney.
