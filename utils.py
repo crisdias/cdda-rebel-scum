@@ -10,7 +10,7 @@ def pp(var, name=None):
     pprint.pprint(var)
 
 
-def showlogo():
+def showlogo_deprecated():
     path = os.path.join(os.path.dirname(__file__), "resources", "logo.txt")
     with open(path, "r", encoding="utf-8") as f:
         logo = f.read()

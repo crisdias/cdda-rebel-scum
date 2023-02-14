@@ -1,9 +1,10 @@
 import datetime
 import os
-import yaml
+import ruamel.yaml
 
 from   utils import *
 from   steps import *
+from   logo  import showlogo
 
 homedir = os.path.expanduser("~")
 basefolder = os.path.join(homedir, ".rebelscum")
@@ -15,7 +16,7 @@ if not os.path.exists(basefolder):
 # exit if sourcesfile does not exist
 if os.path.exists(configfile):
     with open(configfile, "r") as f:
-        config = yaml.safe_load(f)
+        config = ruamel.yaml.load(f, Loader=ruamel.yaml.Loader)
 else:
     config = {
         "backupfolder": "G:\Meu Drive\_game_backups\cddawin-rebelscum",
@@ -24,7 +25,7 @@ else:
 
     # save config to configfile
     with open(configfile, "w") as f:
-        yaml.dump(config, f)
+        ruamel.yaml.dump(config, f)
     
     print(f"No sources file found. Default values used.\nEdit {configfile} to change them.")
 
